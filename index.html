@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chan M. Kyi – Operations, Engineering &amp; SAP Leader</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f8fafc;--fg:#0f172a;--mut:#475569;--card:#ffffff;--line:#e2e8f0;--acc:#0f766e}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1220;--fg:#e2e8f0;--mut:#94a3b8;--card:#131c2e;--line:#243049;--acc:#2dd4bf}}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+.card{background:var(--card);border:1px solid var(--line);border-radius:1rem}
+.mut{color:var(--mut)}.acc{color:var(--acc)}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:.35rem .9rem;font-size:.85rem;cursor:pointer}
+.chip.on{background:var(--acc);color:#04201d;border-color:var(--acc);font-weight:600}
+.tl{position:relative;padding-left:2rem;border-left:2px solid var(--line)}
+.dot{position:absolute;left:-.62rem;top:1.5rem;width:1.1rem;height:1.1rem;border-radius:50%;background:var(--acc);border:3px solid var(--bg)}
+.rev{opacity:0;transform:translateY(16px);transition:.6s}.rev.in{opacity:1;transform:none}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif}
+</style>
+</head>
+<body>
+<header class="sticky top-0 z-20 backdrop-blur" style="background:color-mix(in srgb,var(--bg) 85%,transparent);border-bottom:1px solid var(--line)">
+  <div class="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
+    <a href="#top" class="font-bold">Chan M. Kyi</a>
+    <nav class="hidden sm:flex gap-5 text-sm mut">
+      <a href="#impact">Impact</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section id="top" class="max-w-5xl mx-auto px-4 pt-16 pb-12">
+  <p class="acc font-semibold tracking-wide text-sm uppercase">MBA · PMP® · Lean Six Sigma Green Belt</p>
+  <h1 class="text-4xl md:text-6xl font-bold mt-3 leading-tight">Chan M. Kyi</h1>
+  <p class="text-xl md:text-2xl mt-4 max-w-3xl mut">Chemical engineer turned operations and ERP leader: scaling production, delivering multimillion-dollar projects, and leading SAP transformations in global manufacturing.</p>
+  <div class="flex flex-wrap gap-3 mt-8 text-sm">
+    <a href="#experience" class="px-6 py-3 rounded-full font-semibold" style="background:var(--acc);color:#04201d">View my timeline</a>
+    <a href="mailto:chan.m.kyi@gmail.com" class="px-6 py-3 rounded-full card font-semibold">Email me</a>
+  </div>
+  <p class="mut text-sm mt-6">📍 Cedar Grove, NJ · Currently at Reckitt (Parental Care) · 11+ years in manufacturing</p>
+</section>
+
+<section id="impact" class="max-w-5xl mx-auto px-4 py-12">
+  <h2 class="text-3xl font-bold">Impact at a glance</h2>
+  <div id="stats" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8"></div>
+</section>
+
+<section id="experience" class="max-w-5xl mx-auto px-4 py-12">
+  <div class="flex flex-wrap items-end justify-between gap-4">
+    <h2 class="text-3xl font-bold">Career timeline</h2>
+    <div class="flex gap-2" id="filters"></div>
+  </div>
+  <div id="timeline" class="mt-10 space-y-8"></div>
+</section>
+
+<section id="education" class="max-w-5xl mx-auto px-4 py-12">
+  <h2 class="text-3xl font-bold">Education &amp; certifications</h2>
+  <div class="grid md:grid-cols-2 gap-6 mt-8">
+    <div>
+      <h3 class="text-xl font-bold mb-4">🎓 Degrees</h3>
+      <div id="edu" class="space-y-4"></div>
+    </div>
+    <div>
+      <h3 class="text-xl font-bold mb-4">🏅 Certifications</h3>
+      <div id="certs" class="space-y-4"></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="max-w-5xl mx-auto px-4 py-12">
+  <h2 class="text-3xl font-bold">Core strengths</h2>
+  <div id="skillGroups" class="grid md:grid-cols-2 gap-6 mt-8"></div>
+</section>
+
+<footer id="contact" class="mt-12" style="background:#0f172a;color:#e2e8f0">
+  <div class="max-w-5xl mx-auto px-4 py-14 text-center">
+    <h2 class="text-3xl font-bold">Let’s work together</h2>
+    <p class="mt-3 text-slate-400">Open to operations, ERP/SAP transformation and project leadership conversations.</p>
+    <a href="mailto:chan.m.kyi@gmail.com" class="inline-block mt-6 px-7 py-3 rounded-full font-semibold" style="background:#2dd4bf;color:#04201d">chan.m.kyi@gmail.com</a>
+    <p class="text-sm text-slate-500 mt-6">Cedar Grove, NJ · © 2026 Chan M. Kyi</p>
+  </div>
+</footer>
+
+<script>
+const $=id=>document.getElementById(id);
+const stats=[[11,"+","Years in manufacturing"],[150,"+","Products managed & transferred at BYK"],[300,"+","Finished/semi-finished goods in SAP master data"],[80,"+","End-users trained on SAP"],[350,"t","Weekly output, up from 100 t"],[3,"M","Largest project budget ($)"],[74,"%","Line efficiency, up from 67%"],[25,"%","Changeover & cycle-time reductions"]];
+$("stats").innerHTML=stats.map(s=>`<div class="card p-5 rev"><div class="text-3xl md:text-4xl font-bold acc"><span data-n="${s[0]}">0</span>${s[1]}</div><div class="mut text-sm mt-2">${s[2]}</div></div>`).join("");
+
+const jobs=[
+{co:"Reckitt",role:"Parental Care",when:"05/2026 – Present",loc:"Hillsborough, NJ",now:true,pts:["Current role within Reckitt’s Parental Care business, building on SAP and operations leadership experience."]},
+{co:"Reckitt",role:"SAP Implementation Champion",when:"05/2024 – 04/2026",loc:"Hillsborough, NJ",pts:[
+ "Designed and configured ERP master data (BOMs, routings, production versions, work centers, efficiency, control cycles) for 300+ finished and semi-finished goods, and supported the local data team in cleansing and validation.",
+ "Implemented Shop Floor Control: confirmation processes, variance calculation and scrap recording.",
+ "Led process overview and business change assessments with IBM consultants and cross-functional teams; mapped processes and ran gap analysis on changed roles and responsibilities.",
+ "Led 6+ months of SAP training sessions for 80+ end-users; authored process playbooks for transactions and new procedures.",
+ "Approved end-to-end UAT, including Markem CoLOS software integration with SAP."]},
+{co:"Reckitt",role:"Liquids Packaging Operations Manager",when:"01/2023 – 04/2024",loc:"Hillsborough, NJ",pts:[
+ "Raised monthly department output volume by 10% on average.",
+ "Increased Line 2 efficiency from 67% to 74% through team coordination, SMED changeover work and employee empowerment.",
+ "Cut changeover time by 25% by implementing SMED.",
+ "Prepared for and passed annual internal Safety, Quality and ISO quality audits; ensured adherence to Quality and EHS policies.",
+ "Partnered with Planning to maximize production schedules and meet attainment and PFR targets."]},
+{co:"Reckitt",role:"Sr. Project Engineer",when:"04/2022 – 12/2022",loc:"Hillsborough, NJ",pts:[
+ "Led technical and industrial projects from $100K to $3M in annual budget: new product introductions, capacity increases, safety and cost savings, using PMP methods from planning to closing.",
+ "Drove sourcing with 20–30 suppliers and contractors from RFP/RFQ to final contracts; analyzed bids on price, quality, lead times and payment terms.",
+ "Authored process requirements, equipment and material specs, and scopes of work.",
+ "Supervised contractors on site through installation and execution with zero safety incidents; tracked budgets, POs and invoices."]},
+{co:"Reckitt",role:"Project Engineer",when:"07/2020 – 03/2022",loc:"Hillsborough, NJ",pts:[
+ "Delivered a $1.8M project to design, install and commission a new process system for Lysol Toilet Bowl cleaner, increasing throughput by 10%.",
+ "Designed and commissioned process systems for Lysol septic products, Super Rid-X and Tiger King, on time and on budget.",
+ "Completed a $500K project to transfer a product from another plant, with potential savings of $1M a month.",
+ "Re-designed and installed HCl and ethanol scrubbers, improving site safety."]},
+{co:"BYK USA Inc",role:"Process Engineer",when:"01/2015 – 06/2020",loc:"Wallingford, CT",pts:[
+ "Led commissioning of 5 reactors, 9 mixing vessels, 10+ storage tanks and a thin film evaporator (vacuum distillation unit).",
+ "Managed 150+ new and transfer products from Germany; raised output from 100 to 350 metric tons per week.",
+ "Led cross-functional teams (QC, Production, R&D, Maintenance) using lean six sigma to troubleshoot processes and PLC, FactoryTalk Batch and PI Datalink systems, reducing off-spec batches and cycle times and improving first-pass yield.",
+ "Developed a KOH cleaning procedure for the wetting & dispersing reactor with R&D, projecting $250K annual savings.",
+ "Created new operating procedures for BYK-019 and Int.6330 with process safety, cutting cycle time 25% and projecting $150K+ annual savings.",
+ "Developed operating limits, safety interlock set points and SOPs, and trained operators."]}
+];
+let filt="All";
+function renderTL(){
+ $("filters").innerHTML=["All","Reckitt","BYK USA Inc"].map(f=>`<button data-f="${f}" class="chip ${f===filt?'on':''}">${f}</button>`).join("");
+ $("timeline").innerHTML=jobs.map((j,i)=>({j,i})).filter(o=>filt==="All"||o.j.co===filt).map(({j,i})=>`
+  <div class="tl rev"><span class="dot"></span>
+   <div class="card p-6">
+    <div class="flex flex-wrap justify-between gap-2"><div><h3 class="text-xl font-bold">${j.role}</h3><div class="acc font-semibold">${j.co} · <span class="mut font-normal">${j.loc}</span></div></div>
+    <div class="text-sm mut">${j.when}${j.now?' <span class="ml-1 px-2 py-0.5 rounded-full text-xs font-semibold" style="background:var(--acc);color:#04201d">Current</span>':''}</div></div>
+    <ul class="mt-4 space-y-2 text-sm leading-relaxed list-disc pl-5">${j.pts.map((p,k)=>`<li class="${k>2?'more-'+i+' hidden':''}">${p}</li>`).join("")}</ul>
+    ${j.pts.length>3?`<button data-more="${i}" class="mt-3 text-sm acc font-semibold">Show all ${j.pts.length} highlights ↓</button>`:''}
+   </div></div>`).join("");
+ observe();
+}
+const edu=[["NYU Stern School of Business","Master of Business Administration","01/2024","New York, NY"],["The City College of New York","Master of Engineering, Chemical Engineering","02/2015","New York, NY"],["The City College of New York","Bachelor of Engineering, Chemical Engineering","05/2012","New York, NY"]];
+$("edu").innerHTML=edu.map(e=>`<div class="card p-5 rev"><div class="text-xs mut">${e[2]} · ${e[3]}</div><div class="font-bold mt-1">${e[1]}</div><div class="acc text-sm">${e[0]}</div></div>`).join("");
+const certs=[["Project Management Professional® (PMP)","Project Management Institute","08/2020"],["Lean Six Sigma Green Belt","Certified","06/2019"]];
+$("certs").innerHTML=certs.map(c=>`<div class="card p-5 rev"><div class="text-xs mut">${c[2]}</div><div class="font-bold mt-1">${c[0]}</div><div class="acc text-sm">${c[1]}</div></div>`).join("");
+const skills={"ERP & Digital":["SAP master data","Shop Floor Control","BCA & gap analysis","UAT","End-user training","Markem CoLOS integration"],"Operations":["SMED / changeover","KPI & efficiency improvement","Production planning","ISO, Safety & Quality audits","EHS compliance","Team leadership"],"Engineering & Projects":["Project management ($100K–$3M)","RFP/RFQ sourcing","Equipment & process specs","Commissioning","Process safety & SOPs","Budget control"],"Process Control & Data":["PLC","FactoryTalk Batch","PI Datalink","Root-cause analysis","Lean Six Sigma","Data analysis"]};
+$("skillGroups").innerHTML=Object.entries(skills).map(([k,v])=>`<div class="card p-6 rev"><h3 class="font-bold mb-3">${k}</h3><div class="flex flex-wrap gap-2">${v.map(s=>`<span class="chip cursor-default">${s}</span>`).join("")}</div></div>`).join("");
+
+let io;
+function observe(){
+ io=io||new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");e.target.querySelectorAll("[data-n]").forEach(c=>count(c));io.unobserve(e.target)}}),{threshold:.15});
+ document.querySelectorAll(".rev:not(.in)").forEach(el=>io.observe(el));
+}
+function count(el){const n=+el.dataset.n;let t0=null;const f=t=>{t0=t0||t;const p=Math.min((t-t0)/1200,1);el.textContent=Math.round(n*p);if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
+document.addEventListener("click",e=>{
+ const b=e.target.closest("button");if(!b)return;
+ if(b.dataset.f){filt=b.dataset.f;renderTL()}
+ if(b.dataset.more){const i=b.dataset.more,h=document.querySelectorAll(".more-"+i),open=h[0].classList.contains("hidden");h.forEach(x=>x.classList.toggle("hidden"));b.textContent=open?"Show fewer ↑":"Show all "+(h.length+3)+" highlights ↓"}
+});
+renderTL();observe();
+</script>
+</body>
+</html>
